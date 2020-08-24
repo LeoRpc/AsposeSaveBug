@@ -1,4 +1,5 @@
 ﻿using Aspose.Words;
+using Aspose.Words.Fonts;
 using System;
 using System.IO;
 
@@ -8,6 +9,9 @@ namespace TestAspose
     {
         static void Main(string[] args)
         {
+            // 0. Specify fonts path (SOLUTION 0)
+            //FontSettings.DefaultInstance.SetFontsFolder("/fonts", true);
+
             // 1. Read first file
             var _ = Path.DirectorySeparatorChar.ToString();
             var firstFilePath = $"{Directory.GetCurrentDirectory()}{_}Documents{_}edlinger.docx";
